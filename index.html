@@ -1,131 +1,109 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ghilan Rasendriya Samara | Profile</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghailan Rasendriya Samara</title>
 
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #f4f6f8;
-      margin: 0;
-      padding: 0;
-      color: #1f2937;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    header h1 {
-      font-size: 32px;
-      margin-bottom: 8px;
-    }
-
-    header p {
-      color: #6b7280;
-      font-size: 16px;
-    }
-
-    .card {
-      background: #ffffff;
-      border-radius: 12px;
-      padding: 24px;
-      margin-bottom: 24px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-    }
-
-    .card h2 {
-      font-size: 20px;
-      margin-bottom: 12px;
-      border-bottom: 1px solid #e5e7eb;
-      padding-bottom: 8px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    ul li {
-      margin-bottom: 8px;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      color: #9ca3af;
-      font-size: 14px;
-    }
-  </style>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-  <div class="container">
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-wrapper">
+      <div class="logo">Ghailan.</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#experience">Pengalaman</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- HEADER -->
-    <header>
-      <h1>Ghilan Rasendriya Samara</h1>
-      <p>Business Development • IT Enthusiast • Digital Creator</p>
-    </header>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-wrapper">
+      <div class="hero-text">
+        <h1>Ghailan Rasendriya Samara</h1>
+        <h2>Business Development · IT Enthusiast · Digital Creator</h2>
+        <p>
+          Mahasiswa Bisnis Digital dengan fokus pada pengembangan bisnis,
+          strategi digital, dan ekosistem teknologi.
+        </p>
+        <a href="#contact" class="btn-primary">Hubungi Saya</a>
+      </div>
 
-    <!-- ABOUT -->
-    <div class="card">
-      <h2>Tentang Saya</h2>
-      <p>
-        Saya adalah mahasiswa Bisnis Digital dengan minat kuat pada Business Development,
-        teknologi, dan pengembangan ekosistem digital. Aktif membangun project, komunitas,
-        serta media berbasis teknologi dan esport.
+      <div class="hero-image">
+        <img src="assets/profile.jpg" alt="Foto Ghailan">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h3 class="section-title">Tentang Saya</h3>
+      <p class="section-text">
+        Saya aktif membangun dan mengelola berbagai project di bidang Business
+        Development, komunitas, dan media digital. Terbiasa bekerja dengan tim,
+        menyusun strategi, serta menjembatani kebutuhan bisnis dan teknologi.
       </p>
     </div>
+  </section>
 
-    <!-- SKILLS -->
-    <div class="card">
-      <h2>Keahlian</h2>
-      <ul>
+  <!-- SKILLS -->
+  <section id="skills" class="section alt-bg">
+    <div class="container">
+      <h3 class="section-title">Keahlian</h3>
+      <ul class="skill-list">
         <li>Business Development & Partnership</li>
         <li>Digital Marketing Strategy</li>
         <li>Social Media Management</li>
-        <li>Basic Web Development (HTML, CSS)</li>
+        <li>Basic Web Development (HTML & CSS)</li>
       </ul>
     </div>
+  </section>
 
-    <!-- EXPERIENCE -->
-    <div class="card">
-      <h2>Pengalaman & Project</h2>
-      <ul>
-        <li>Founder & Business Developer — Gardantara Organizer</li>
-        <li>Social Media Specialist — Interior & Construction Company</li>
-        <li>Esport Organizer & Community Builder</li>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h3 class="section-title">Pengalaman</h3>
+      <ul class="experience-list">
+        <li>
+          <strong>Founder & Business Developer</strong><br>
+          Gardantara Organizer
+        </li>
+        <li>
+          <strong>Social Media Specialist</strong><br>
+          Interior & Construction Company
+        </li>
+        <li>
+          <strong>Esport Organizer & Community Builder</strong>
+        </li>
       </ul>
     </div>
+  </section>
 
-    <!-- CONTACT -->
-    <div class="card">
-      <h2>Kontak</h2>
-      <p>Email: <strong>ghailan@example.com</strong></p>
-      <p>Instagram: <strong>@ghailan</strong></p>
+  <!-- CONTACT -->
+  <section id="contact" class="section alt-bg">
+    <div class="container">
+      <h3 class="section-title">Kontak</h3>
+      <p class="section-text">
+        Email: <strong>ghailan@example.com</strong><br>
+        Instagram: <strong>@ghailanrs</strong>
+      </p>
     </div>
+  </section>
 
-    <footer>
-      © 2026 Ghilan Rasendriya Samara
-    </footer>
-
-  </div>
+  <footer class="footer">
+    © 2026 Ghailan Rasendriya Samara
+  </footer>
 
 </body>
 </html>
